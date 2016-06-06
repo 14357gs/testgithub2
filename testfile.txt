@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		
+			<title>Document</title>
+				<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+					<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+					  <script>
+					    	function mycontroller($scope)
+						    {
+						        $scope.getarea = function ()
+							    {
+							         $scope.totalarea = parseFloat($scope.length) *  parseFloat($scope.breadth);
+								     }
+
+								         }
+
+									   </script>
+									     
+									     	
+										</head>
+										<body ng-app="" ng-class="'container'" >
+										<h1>
+											first page of controller
+											</h1>
+											<div ng-contoller="mycontroller">
+												</br>
+													</br>
+														ENTER LENGTH OF A RECTANGLE:
+															<input type="text" ng-model="length" />
+																</br>
+																	ENTER BREADTH OF A RECTANGLE:
+																		<input type="text" ng-model="breadth"/>
+																			</br>
+																				</br>
+																					<input type="button" ng-class="'btn btn-success'" value="Total Area of rectangle" ng-click="getarea()"/>
+																						</br>
+																							TOTAL AREA OF A RECTANGLE : {{totalarea}}
+																								</div>
+																								<div ng-show="true">
+																								<pre>
+																									Text in a pre element
+																									is displayed in a fixed-width
+																									font, and it preserves
+																									both      spaces and
+																									line breaks.
+																									</pre>
+																									</div>
+																									<div ng-show="false">
+																									<pre>
+																									Text in a pre element
+																									is displayed in a fixed-width
+																									font, and it preserves
+																									both      spaces and
+																									line breaks.
+																									</pre>
+																									</div>
+
+																										<div ng-hide="false">
+																											<pre>
+																											Text in a pre element
+																											is displayed in a fixed-width
+																											font, and it preserves
+																											both      spaces and
+																											line breaks.
+																											</pre>	
+																												</div>
+
+
+																												</body>
+																												</html>
